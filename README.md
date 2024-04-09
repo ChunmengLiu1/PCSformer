@@ -15,8 +15,9 @@ Ubuntu 18.04, CUDA 11.4, Python 3.9.18 and the following python dependencies.
 #### 2. Download dataset 
 Download [the PASCAL VOC 2012 development kit](http://host.robots.ox.ac.uk/pascal/VOC/voc2012).
 
-#### 3. Download pretrained weights
+#### 3. Download pretrained weights and put it on folder weights
 Download [Conformer_small_patch16.pth](https://drive.google.com/file/d/1f8f_s3WKjXGMp5H0JcgEWmnoNEZu8BX1/view?usp=sharing).
+
 Download [ilsvrc-cls_rna-a1_cls1000_ep-0001.params](https://drive.google.com/file/d/1Q4tuPLyudVQ8A11eSY63qPl74n7v8BPl/view?usp=sharing).
 
 #### 4. Download saliency map
