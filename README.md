@@ -4,18 +4,23 @@ Implementation of the paper: "PCSformer: Pair-wise Cross-wise Sub-prototypes Min
 <p align="left"><img src="imgs/framework.png" alt="outline" width="95%"></p>
 
 ## Abstract
+Generating initial seeds is an important step in weakly supervised semantic segmentation. Our approach concentrates on generating and refining initial seeds. The convolutional neural networks (CNNs)--based initial seeds focus only on the most discriminative regions and lack global information about the target. The Vision Transformer (ViT)--based approach can capture long-range feature dependencies due to the unique advantage of the self-attention mechanism. Still, we find that it suffers from distractor object leakage and background leakage problems. 
+Based on these observations, we propose PCSformer in this paper, which improves the model's ability to extract features through a Pair-wise Cross-scale (PC) strategy and solves the problem of distractor object leakage by further extracting potential target features through Sub-Prototypes (SP) mining. In addition, the proposed Conflict Self-Elimination (CSE) module further alleviates the background leakage problem.
+We validate our approach on the commonly used Pascal VOC 2012 and MS COCO 2014, and extensive experiments show that we achieve superior results. 
+We also extend PCSformer to weakly supervised object localization tasks and perform well. In addition, our approach is competitive for semantic segmentation in medical images and challenging deformable and often translucent cluttered scenes.
+The code is available at https://github.com/ChunmengLiu1/PCSformer.
 
 ## Prerequisite
 
 #### 1. install dependencies 
-Ubuntu 18.04, CUDA 11.4, Python 3.9.18 and the following python dependencies.
+Ubuntu 18.04, CUDA 11.4, Python 3.9.18, and the following Python dependencies.
 
 ```pip install -r requirements.txt```
 
 #### 2. Download dataset 
 Download [the PASCAL VOC 2012 development kit](http://host.robots.ox.ac.uk/pascal/VOC/voc2012).
 
-#### 3. Download pretrained weights and put under folder "weights"
+#### 3. Download pre-trained weights and put them under the folder "weights"
 Download [Conformer_small_patch16.pth](https://drive.google.com/file/d/1f8f_s3WKjXGMp5H0JcgEWmnoNEZu8BX1/view?usp=sharing).
 
 Download [ilsvrc-cls_rna-a1_cls1000_ep-0001.params](https://drive.google.com/file/d/1Q4tuPLyudVQ8A11eSY63qPl74n7v8BPl/view?usp=sharing).
