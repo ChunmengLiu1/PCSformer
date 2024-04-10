@@ -1,5 +1,5 @@
 # PCSformer
-Implementation of the paper: "PCSformer: Pair-wise Cross-wise Sub-prototypes Mining with CNN-Transformers for Weakly Supervised Semantic Segmentation"
+Implementation of the paper: "PCSformer: Pair-wise Cross-scale Sub-prototypes Mining with CNN-Transformers for Weakly Supervised Semantic Segmentation"
 
 <p align="left"><img src="imgs/framework.png" alt="outline" width="95%"></p>
 
